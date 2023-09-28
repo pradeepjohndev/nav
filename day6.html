@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive nav</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(137, 137, 137, 0.636);            
+        }
+
+        .logo ,.nav-name ,button{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+        }
+
+        .nav-name{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        li{
+            display: inline-block;
+            margin: 10px;
+        }
+
+        li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        button{
+            background-color: rgba(255, 255, 255, 0);
+            border: 2px inset rgb(80, 80, 80);
+            border-radius: 20px;
+            padding: 0px 08px;
+        }
+
+        button a{
+            text-decoration: none;
+            color:white;
+        }
+
+        li a:hover{
+            color:rgb(228, 228, 228);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <div class="nav-name">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Aboutus">About us</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#feature">feature</a></li>
+        </div>
+        <button><a href="#btn">contact</a></button>
+    </nav>
+</body>
+</html>
